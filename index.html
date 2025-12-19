@@ -52,7 +52,7 @@
             <div class="card">
                 <i class="fas fa-user-secret icon"></i>
                 <h3>Industry Mentors</h3>
-                <p>Learn directly from professionals currently working in FAANG security teams.</p>
+                <p>Learn directly from professionals currently working in security teams.</p>
             </div>
         </div>
     </section>
@@ -127,6 +127,46 @@
         </div>
     </section>
 
+	<section id="waitlist" class="container terminal-section">
+        
+        <div class="terminal-header-text">
+            <h2>// Establish Contact</h2>
+            <p>Initialize connection. Enter your email to join the network.</p>
+        </div>
+
+        <div class="terminal-window">
+            <div class="terminal-header">
+                <div class="buttons">
+                    <span class="dot red"></span>
+                    <span class="dot yellow"></span>
+                    <span class="dot green"></span>
+                </div>
+                <div class="terminal-title">root@whiteravens:~</div>
+            </div>
+            
+            <div class="terminal-body">
+                <div class="code-line">
+                    <span class="prompt">root@whiteravens:~$</span> ./init_protocol.sh
+                </div>
+                <div class="code-line">
+                    <span class="output">> System integrity check... <span class="success">PASSED</span></span>
+                </div>
+                <div class="code-line">
+                    <span class="output">> Waiting for user input... </span>
+                </div>
+                
+                <div class="code-line input-line">
+                    <span class="prompt">root@whiteravens:~$</span>
+                    <form id="waitlistForm" autocomplete="off">
+                        <input type="email" id="email" class="terminal-input" placeholder="type_email_here..." required>
+                    </form>
+                </div>
+
+                <div id="formMessage" class="code-line hidden"></div>
+            </div>
+        </div>
+    </section>
+
     
 	
 	
@@ -138,4 +178,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
