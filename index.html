@@ -128,10 +128,9 @@
     </section>
 
 	<section id="waitlist" class="container terminal-section">
-        
         <div class="terminal-header-text">
             <h2>// Establish Contact</h2>
-            <p>Initialize connection. Enter your email to join the network.</p>
+            <p>Initialize direct communication protocol.</p>
         </div>
 
         <div class="terminal-window">
@@ -141,28 +140,29 @@
                     <span class="dot yellow"></span>
                     <span class="dot green"></span>
                 </div>
-                <div class="terminal-title">root@whiteravens:~</div>
+                <div class="terminal-title">root@whiteravens:~/comms</div>
             </div>
             
             <div class="terminal-body">
                 <div class="code-line">
-                    <span class="prompt">root@whiteravens:~$</span> ./init_protocol.sh
+                    <span class="prompt">root@whiteravens:~$</span> ./start_uplink.sh
                 </div>
                 <div class="code-line">
-                    <span class="output">> System integrity check... <span class="success">PASSED</span></span>
+                    <span class="output">> Handshake status... <span class="success">STABLE</span></span>
                 </div>
                 <div class="code-line">
-                    <span class="output">> Waiting for user input... </span>
+                    <span class="output">> Encrypted tunnel opened to SOC.</span>
                 </div>
                 
-                <div class="code-line input-line">
-                    <span class="prompt">root@whiteravens:~$</span>
-                    <form id="waitlistForm" autocomplete="off">
-                        <input type="email" id="email" class="terminal-input" placeholder="type_email_here..." required>
-                    </form>
+                <div class="contact-action-container">
+                    <p class="terminal-subtext">Awaiting transmission...</p>
+                    <a href="mailto:WhiteRavensCyberSec@outlook.com?subject=Security%20Inquiry" class="contact-mail-btn">
+                        <i class="fas fa-paper-plane"></i> Send Direct Mail
+                    </a>
+                    <div class="code-line" style="margin-top: 20px; opacity: 0.5;">
+                        <span class="prompt">root@whiteravens:~$</span> <span class="typing-cursor"></span>
+                    </div>
                 </div>
-
-                <div id="formMessage" class="code-line hidden"></div>
             </div>
         </div>
     </section>
@@ -178,5 +178,6 @@
     <script src="script.js"></script>
 </body>
 </html>
+
 
 
